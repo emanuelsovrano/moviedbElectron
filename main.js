@@ -1,10 +1,12 @@
-const {app, BrowserWindow} = require('electron')
+const electron = require('electron')
+const app = electron.app
+const BrowserWindow = electron.BrowserWindow
 const path = require('path')
 const url = require('url')
 
-let win 
+let win
 
-function createWindwo() {
+function createWindow() {
     //create a window object
     win = new BrowserWindow({width: 800, height: 600})
     
@@ -15,4 +17,6 @@ function createWindwo() {
         slashes: true
     }))
 }
+
+app.on('ready', createWindow)
 
