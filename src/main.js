@@ -9,6 +9,8 @@ let win;
 function createWindow() {
     //create a window object
     win = new BrowserWindow({width: 800, height: 600});
+
+    win.webContents.openDevTools();    
     
     //load window object
     win.loadURL(url.format({
@@ -19,4 +21,3 @@ function createWindow() {
 }
 
 app.on('ready', createWindow);
-

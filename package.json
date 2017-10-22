@@ -2,7 +2,7 @@
   "name": "moviedbelectron",
   "version": "1.0.0",
   "description": "school project",
-  "main": "main.js",
+  "main": "src/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron ."
@@ -23,5 +23,10 @@
   "devDependencies": {
     "electron": "^1.7.9",
     "eslint": "^4.9.0"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
+    "lodash": "^4.17.4"
   }
 }
